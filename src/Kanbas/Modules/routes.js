@@ -1,5 +1,7 @@
-import db from "../Database/index.js";
+import { get } from "mongoose";
+import * as dao from "./dao.js";
 function ModuleRoutes(app) {
+    /*
     app.post("/api/courses/:cid/modules", (req, res) => {
         const { cid } = req.params;
         const newModule = {
@@ -33,6 +35,35 @@ function ModuleRoutes(app) {
         };
         res.sendStatus(204);
       });
-    
+    */
+
+    const createModule = async (req, res) => {
+        const module = await dao.createModule(req.body);
+        res.json(module);
+    }
+
+    const deleteModule = async (req, res) => {
+        const status = await dao.deleteModule(req.params.moduleId);
+        res.json(status);
+    }
+
+    const findModulesForCourse = async (req, res) => {    
+        const { cid } = req.params;
+        const modules = await dao.findModulesForCourse(cid);
+        res.json(modules);
+    }
+
+    const updateModule = async (req, res) => {
+        const { moduleId } = req.params;
+        const status = await dao.updateModule(moduleId, req.body);
+        const currentModule = await dao.findModuleById(moduleId);
+        req.session["currentModule"] = currentModule;
+        res.json(status);
+    }
+
+    app.post("/api/courses/:cid/modules", createModule);
+    app.delete("/api/modules/:mid", deleteModule);
+    app.get("/api/courses/:cid/modules", findModulesForCourse);
+    app.put("/api/modules/:mid", updateModule);
 }
 export default ModuleRoutes;

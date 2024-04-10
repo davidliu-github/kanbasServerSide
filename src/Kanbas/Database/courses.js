@@ -4,8 +4,8 @@ export default [
       name: "Rocket Propulsion",
       number: "RS4550",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "D123",
       credits: 4,
       description:
@@ -16,8 +16,8 @@ export default [
       name: "Aerodynamics",
       number: "RS4560",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "D123",
       credits: 3,
       description:
@@ -28,8 +28,8 @@ export default [
       name: "Spacecraft Design",
       number: "RS4570",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "D123",
       credits: 4,
       description:
@@ -40,8 +40,8 @@ export default [
       name: "Organic Chemistry",
       number: "CH1230",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "D134",
       credits: 3,
       description:
@@ -52,8 +52,8 @@ export default [
       name: "Inorganic Chemistry",
       number: "CH1240",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "D134",
       credits: 3,
       description:
@@ -64,8 +64,8 @@ export default [
       name: "Physical Chemistry",
       number: "CH1250",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "D134",
       credits: 3,
       description:
@@ -76,8 +76,8 @@ export default [
       name: "Ancient Languages and Scripts of Middle-earth",
       number: "ME101",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "Languages",
       credits: 3,
       description:
@@ -89,8 +89,8 @@ export default [
       name: "Wizards, Elves, and Men: Inter-species Diplomacy in Middle-earth",
       number: "ME102",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "Political Studies",
       credits: 4,
       description:
@@ -102,8 +102,8 @@ export default [
       name: "History and Practice of Middle-earth Magic",
       number: "ME103",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "Mystical Studies",
       credits: 4,
       description:
@@ -115,8 +115,8 @@ export default [
       name: "Principles of Democratic Education",
       number: "EDU201",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "Education",
       credits: 3,
       description:
@@ -127,8 +127,8 @@ export default [
       name: "Philosophy of Independence and Liberation",
       number: "HIS301",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "History",
       credits: 4,
       description:
@@ -139,8 +139,8 @@ export default [
       name: "Innovations in Early 19th Century Education",
       number: "EDU303",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "Education",
       credits: 3,
       description:
@@ -151,8 +151,8 @@ export default [
       name: "Foundations of Christian Ethics",
       number: "THEO101",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "Theology",
       credits: 3,
       description:
@@ -164,8 +164,8 @@ export default [
       name: "Early Christianity and the Apostolic Age",
       number: "HIS201",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "History",
       credits: 4,
       description:
@@ -177,8 +177,8 @@ export default [
       name: "Leadership and Service in Christian Communities",
       number: "MIN301",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "Ministry",
       credits: 3,
       description:
@@ -190,8 +190,8 @@ export default [
       name: "Sufi Philosophy and Mystical Traditions",
       number: "ISL301",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "Islamic Studies",
       credits: 3,
       description:
@@ -203,8 +203,8 @@ export default [
       name: "Ethical Wisdom in Islamic Teachings",
       number: "ISL202",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "Islamic Ethics",
       credits: 3,
       description:
@@ -216,8 +216,8 @@ export default [
       name: "Understanding the Unseen: Islamic Esotericism",
       number: "ISL403",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "Islamic Mysticism",
       credits: 4,
       description:
@@ -229,8 +229,8 @@ export default [
       name: "Ancient Chinese Environmental Management",
       number: "ENV101",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "Environmental Studies",
       credits: 3,
       description:
@@ -241,8 +241,8 @@ export default [
       name: "Leadership Lessons from Chinese Mythology",
       number: "MGT201",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "Management Studies",
       credits: 4,
       description:
@@ -253,8 +253,8 @@ export default [
       name: "Hydraulic Engineering in Ancient Civilizations",
       number: "ENG303",
       startDate: "2023-01-10",
-      image: "Zoo-animals-scaled.jpg",
       endDate: "2023-05-15",
+      image: "Zoo-animals-scaled.jpg",
       department: "Engineering",
       credits: 4,
       description:

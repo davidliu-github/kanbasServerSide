@@ -1,6 +1,7 @@
-import Database from "../Database/index.js";
+import * as dao from "./dao.js";
+
 export default function CourseRoutes(app) {
-  console.log("CourseRoutes");
+  /*
   app.post("/api/courses", (req, res) => {
     const course = { ...req.body,
       _id: new Date().getTime().toString() };
@@ -38,6 +39,38 @@ export default function CourseRoutes(app) {
     const courses = Database.courses;
     res.send(courses);
   });
+*/
+  const createCourse = async (req, res) => {
+    const course = await dao.createCourse(req.body);
+    res.json(course);
+  };
 
+  const deleteCourse = async (req, res) => {
+    const status = await dao.deleteCourse(req.params.courseId);
+    res.json(status);
+  };
 
+  const updateCourse = async (req, res) => {
+    const { courseId } = req.params;
+    const status = await dao.updateUser(courseId, req.body);
+    const currentUser = await dao.findCourseById(courseId);
+    req.session["currentUser"] = currentUser;
+    res.json(status);
+  };
+
+  const findCourseById = async (req, res) => {
+    const course = await dao.findCourseById(req.params.courseId);
+    res.json(course);
+  };
+
+  const findAllCourses = async (req, res) => {
+    const courses = await dao.findAllCourses();
+    res.json(courses);
+  }
+
+  app.post("/api/courses", createCourse);
+  app.delete("/api/courses/:id", deleteCourse);
+  app.put("/api/courses/:id", updateCourse);
+  app.get("/api/courses/:id", findCourseById);
+  app.get("/api/courses/", findAllCourses);
 }
