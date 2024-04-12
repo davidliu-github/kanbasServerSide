@@ -50,6 +50,8 @@ function ModuleRoutes(app) {
     const findModulesForCourse = async (req, res) => {    
         const { cid } = req.params;
         const modules = await dao.findModulesForCourse(cid);
+        console.log("course id: " + cid);
+        console.log("backend modules: " + modules);
         res.json(modules);
     }
 
