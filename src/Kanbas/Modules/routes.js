@@ -43,7 +43,7 @@ function ModuleRoutes(app) {
     }
 
     const deleteModule = async (req, res) => {
-        const status = await dao.deleteModule(req.params.moduleId);
+        const status = await dao.deleteModule(req.params.mid);
         res.json(status);
     }
 
