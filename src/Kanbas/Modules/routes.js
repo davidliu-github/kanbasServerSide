@@ -40,12 +40,14 @@ function ModuleRoutes(app) {
     const createModule = async (req, res) => {
         const module = await dao.createModule(req.body);
         res.json(module);
-    }
+    } 
+    app.post("/api/courses/:cid/modules", createModule);
 
     const deleteModule = async (req, res) => {
         const status = await dao.deleteModule(req.params.mid);
         res.json(status);
     }
+    app.delete("/api/modules/:mid", deleteModule);
 
     const findModulesForCourse = async (req, res) => {    
         const { cid } = req.params;
@@ -54,6 +56,7 @@ function ModuleRoutes(app) {
         console.log("backend modules: " + modules);
         res.json(modules);
     }
+    app.get("/api/courses/:cid/modules", findModulesForCourse);
 
     const updateModule = async (req, res) => {
         const { moduleId } = req.params;
@@ -62,10 +65,8 @@ function ModuleRoutes(app) {
         req.session["currentModule"] = currentModule;
         res.json(status);
     }
-
-    app.post("/api/courses/:cid/modules", createModule);
-    app.delete("/api/modules/:mid", deleteModule);
-    app.get("/api/courses/:cid/modules", findModulesForCourse);
     app.put("/api/modules/:mid", updateModule);
+
+
 }
 export default ModuleRoutes;
